@@ -5,3 +5,11 @@ class Emprunt:
         self.date_retour_prevue = date_retour_prevue
         self.date_retour_reelle = date_retour_reelle
         self.duree_pret_reelle = duree_pret_reelle
+    
+    def __str__(self):
+        return f"""Date du prêt: {self.date_pret}
+        \nid abonne: {self.id_abonne}
+        \nDate de retour prévue: {self.date_retour_prevue}
+        \nDate de retour réelle: {self.date_retour_reelle}
+        \nDurée réelle du prêt: {self.duree_pret_reelle}
+        \n=================================="""
