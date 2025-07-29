@@ -5,4 +5,13 @@ class Livre:
         self.titre = titre
         self.auteur = auteur
         self.editeur = editeur
-        self. categorie = categorie
+        self.categorie = categorie
+    
+    def __str__(self):
+        return f"""ISBN: {self.isbn}
+        \nDate d'achat: {self.date_achat}
+        \nTitre: {self.titre}
+        \nAuteur: {self.auteur}
+        \nEditeur: {self.editeur}
+        \ncategorie: {self.categorie}
+        \n=================================="""
